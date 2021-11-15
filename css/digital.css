@@ -59,6 +59,7 @@ body{
     align-items: center;
 }
 .btn{
+    font-family: 'Montserrat', sans-serif;
     width: 130px;
     height: 45px;
     border-radius: 5px;
