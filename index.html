@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clock Anológico- JRG</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Reloj Analógico</h1>
+        <div class="fecha">
+            <p id="diaSemana" class="diaSemana"></p>
+            <p id="dia" class="dia"></p>
+            <p>de </p>
+            <p id="mes" class="mes"></p>
+            <p>del </p>
+            <p id="year" class="year"></p>
+        </div>
+        <div class="button">
+            <a class="btn" href="digital.html" type="button" >Reloj Digital</a>
+        </div>
+        <div id="container_principal"></div>
+    </div>
+    <div class="clock">
+        <div class="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+
+        <div class="min">
+            <div class="mn" id="mn"></div>
+        </div>
+
+        <div class="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

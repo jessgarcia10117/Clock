@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: url('img/Back.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 12%;
+    
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    margin: 0 auto;
+}
+.widget{
+    width: 60%;
+    height: 100%;
+    margin: 2em;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 130px;
+    height: 45px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid #20e2d7;
+    text-align: center;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #20e2d7;
+    box-shadow: 0 0 10px #20e2d7, 0 0 20px #20e2d7, 0 0 20px #20e2d7;
+    color: #434343;
+}
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 450;
+    margin-bottom: 0.3125rem;
+    padding: 20px;
+    width: 100%;
+    color: white;
+}
+
+.reloj{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.reloj > .caja-segundos{
+    display: inline-block;
+}
+
+.caja-segundos > .segundos,
+.caja-segundos > .ampm{
+    font-size: 2rem;
+    display: block;
+}
+
+@media screen and (min-width:320px) and (max-width:600px) {
+
+    body{
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;        
+    }
+    .container{
+        margin-top: 80px;
+    }
+    .fecha{
+        font-size: 1.15em;
+        font-weight: 450;
+        margin-bottom: 0.1rem;
+        padding: 25px;
+        width: 100%;
+        color: white;
+    }
+    
+    .reloj{
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        padding: 20px;
+        font-size: 1.70em;
+        font-weight: 800;
+    }
+    .caja-segundos > .segundos,
+    .caja-segundos > .ampm{
+    font-size: 1rem;
+    display: block;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+
+    body{
+        padding-top: 12%;
+    }
+    .fecha{
+        font-size: 1.75em;
+        font-weight: 450;
+        margin-bottom: 0.1rem;
+        padding: 25px;
+        width: 100%;
+        color: white;
+    }
+    
+    .reloj{
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        padding: 20px;
+        font-size: 4.70em;
+        font-weight: 800;
+    }
+    .caja-segundos > .segundos,
+    .caja-segundos > .ampm{
+    font-size: 2.50rem;
+    display: block;
+    }
+    .btn{
+        width: 160px;
+        height: 65px;
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+}
